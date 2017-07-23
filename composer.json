@@ -1,0 +1,16 @@
+{
+    "name": "sr/sr-disable-advancedsearch",
+    "type": "magento-module",
+    "description": "Disable advanced search on storeview scope",
+    "homepage": "https://github.com/sreichel/magento-Sr_DisableAdvancedSearch",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors": [
+        {
+            "name": "Sven Reichel",
+            "email": "github-sr@hotmail.com",
+            "role": "Author/Maintainer"
+        }
+    ]
+}

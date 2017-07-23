@@ -1,0 +1,5 @@
+src/app/code/community/Sr/DisableAdvancedSearch     app/code/community/Sr/DisableAdvancedSearch/
+src/app/etc/modules/Sr_DisableAdvancedSearch.xml    app/etc/modules/Sr_DisableAdvancedSearch.xml
+
+# Clear the cache
+@shell rm -rf $PROJECT/var/cache/* && echo "Cache cleared"

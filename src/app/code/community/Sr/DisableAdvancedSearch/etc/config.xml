@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Sr_DisableAdvancedSearch>
+            <version>0.0.1</version>
+        </Sr_DisableAdvancedSearch>
+    </modules>
+    <global>
+        <helpers>
+            <sr_disable_advancedsearch>
+                <class>Sr_DisableAdvancedSearch_Helper</class>
+            </sr_disable_advancedsearch>
+        </helpers>
+        <models>
+            <sr_disable_advancedsearch>
+                <class>Sr_DisableAdvancedSearch_Model</class>
+            </sr_disable_advancedsearch>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_predispatch_catalogsearch_advanced_index>
+                <observers>
+                    <sr_disable_advancedsearch_index>
+                        <class>sr_disable_advancedsearch/observer</class>
+                        <method>disableAdvancedSearch</method>
+                    </sr_disable_advancedsearch_index>
+                </observers>
+            </controller_action_predispatch_catalogsearch_advanced_index>
+            <controller_action_predispatch_catalogsearch_advanced_result>
+                <observers>
+                    <sr_disable_advancedsearch_results>
+                        <class>sr_disable_advancedsearch/observer</class>
+                        <method>disableAdvancedSearch</method>
+                    </sr_disable_advancedsearch_results>
+                </observers>
+            </controller_action_predispatch_catalogsearch_advanced_result>
+        </events>
+    </frontend>
+    <default>
+        <catalog>
+            <search>
+                <enable_advanced_search>1</enable_advanced_search>
+            </search>
+        </catalog>
+    </default>
+</config>
