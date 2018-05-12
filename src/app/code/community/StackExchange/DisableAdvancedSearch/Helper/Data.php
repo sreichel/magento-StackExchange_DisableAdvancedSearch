@@ -10,8 +10,8 @@
 /**
  * Data helper
  */
-class Sr_DisableAdvancedSearch_Helper_Data extends Mage_Core_Helper_Abstract
+class StackExchange_DisableAdvancedSearch_Helper_Data extends Mage_Core_Helper_Abstract
 {
     /** @var string $_moduleName Module name */
-    protected $_moduleName = 'Sr_DisableAdvancedSearch';
+    protected $_moduleName = 'StackExchange_DisableAdvancedSearch';
 }

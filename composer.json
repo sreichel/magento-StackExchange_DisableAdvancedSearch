@@ -1,8 +1,8 @@
 {
-    "name": "sr/sr-disable-advancedsearch",
+    "name": "stackexchange/stackexchange-disable-advancedsearch",
     "type": "magento-module",
     "description": "Disable advanced search on storeview scope",
-    "homepage": "https://github.com/sreichel/magento-Sr_DisableAdvancedSearch",
+    "homepage": "https://github.com/sreichel/magento-StackExchange_DisableAdvancedSearch",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
     },

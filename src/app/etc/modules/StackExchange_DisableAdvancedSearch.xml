@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Sr_DisableAdvancedSearch>
+        <StackExchange_DisableAdvancedSearch>
             <active>true</active>
             <codePool>community</codePool>
-        </Sr_DisableAdvancedSearch>
+        </StackExchange_DisableAdvancedSearch>
     </modules>
 </config>

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <modules>
-        <Sr_DisableAdvancedSearch>
-            <version>0.0.1</version>
-        </Sr_DisableAdvancedSearch>
+        <StackExchange_DisableAdvancedSearch>
+            <version>0.0.2</version>
+        </StackExchange_DisableAdvancedSearch>
     </modules>
     <global>
         <helpers>
-            <sr_disable_advancedsearch>
-                <class>Sr_DisableAdvancedSearch_Helper</class>
-            </sr_disable_advancedsearch>
+            <stackexchange_disable_advancedsearch>
+                <class>StackExchange_DisableAdvancedSearch_Helper</class>
+            </stackexchange_disable_advancedsearch>
         </helpers>
         <models>
-            <sr_disable_advancedsearch>
-                <class>Sr_DisableAdvancedSearch_Model</class>
-            </sr_disable_advancedsearch>
+            <stackexchange_disable_advancedsearch>
+                <class>StackExchange_DisableAdvancedSearch_Model</class>
+            </stackexchange_disable_advancedsearch>
         </models>
     </global>
     <frontend>
         <events>
             <controller_action_predispatch_catalogsearch_advanced_index>
                 <observers>
-                    <sr_disable_advancedsearch_index>
-                        <class>sr_disable_advancedsearch/observer</class>
+                    <stackexchange_disable_advancedsearch_index>
+                        <class>stackexchange_disable_advancedsearch/observer</class>
                         <method>disableAdvancedSearch</method>
-                    </sr_disable_advancedsearch_index>
+                    </stackexchange_disable_advancedsearch_index>
                 </observers>
             </controller_action_predispatch_catalogsearch_advanced_index>
             <controller_action_predispatch_catalogsearch_advanced_result>
                 <observers>
-                    <sr_disable_advancedsearch_results>
-                        <class>sr_disable_advancedsearch/observer</class>
+                    <stackexchange_disable_advancedsearch_results>
+                        <class>stackexchange_disable_advancedsearch/observer</class>
                         <method>disableAdvancedSearch</method>
-                    </sr_disable_advancedsearch_results>
+                    </stackexchange_disable_advancedsearch_results>
                 </observers>
             </controller_action_predispatch_catalogsearch_advanced_result>
         </events>

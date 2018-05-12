@@ -10,7 +10,7 @@
 /**
  * Observer Model
  */
-class Sr_DisableAdvancedSearch_Model_Observer extends Mage_Core_Model_Observer
+class StackExchange_DisableAdvancedSearch_Model_Observer extends Mage_Core_Model_Observer
 {
     /**
      * Disable Advanced Search at storeview scope
