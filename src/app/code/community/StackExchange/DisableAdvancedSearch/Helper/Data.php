@@ -3,8 +3,8 @@
  * SR-Module
  *
  * @author      Sven Reichel <github-sr@hotmail.com>
- * @category    Mx
- * @package     Sr_DisableAdvancedSearch
+ * @category    StackExchange
+ * @package     StackExchange_DisableAdvancedSearch
  */
  
 /**

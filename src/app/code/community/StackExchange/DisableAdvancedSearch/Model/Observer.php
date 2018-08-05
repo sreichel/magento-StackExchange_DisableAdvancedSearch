@@ -3,14 +3,14 @@
  * SR-Module
  *
  * @author      Sven Reichel <github-sr@hotmail.com>
- * @category    Mx
- * @package     Sr_DisableAdvancedSearch
+ * @category    StackExchange
+ * @package     StackExchange_DisableAdvancedSearch
  */
 
 /**
  * Observer Model
  */
-class StackExchange_DisableAdvancedSearch_Model_Observer extends Mage_Core_Model_Observer
+class StackExchange_DisableAdvancedSearch_Model_Observer
 {
     /**
      * Disable Advanced Search at storeview scope
