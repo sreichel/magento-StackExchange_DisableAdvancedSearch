@@ -1,5 +1,5 @@
 {
-    "name": "mse-sv3n/disable-advanced-search",
+    "name": "mse-sv3n/m1-disable-advanced-search",
     "type": "magento-module",
     "license": "OSL-3.0",
     "description": "Disable advanced search on storeview scope",

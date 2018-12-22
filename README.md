@@ -31,7 +31,7 @@ modman clone https://github.com/sreichel/magento-StackExchange_DisableAdvancedSe
 ```
 - via composer
 ```
-composer require mse-sv3n/disable-advanced-search
+composer require mse-sv3n/m1-disable-advanced-search
 ```
 
 #### Uninstallation
@@ -41,7 +41,7 @@ modman remove magento-stackexchange-disableadvancesdsearch
 ```
 - via composer
 ```
-composer remove mse-sv3n/disable-advanced-search
+composer remove mse-sv3n/m1-disable-advanced-search
 ```
 
 ### Usage
