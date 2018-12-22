@@ -1,16 +1,18 @@
 {
-    "name": "stackexchange/stackexchange-disable-advancedsearch",
+    "name": "mse-sv3n/disable-advanced-search",
     "type": "magento-module",
+    "license": "OSL-3.0",
     "description": "Disable advanced search on storeview scope",
     "homepage": "https://github.com/sreichel/magento-StackExchange_DisableAdvancedSearch",
-    "require": {
-        "magento-hackathon/magento-composer-installer": "*"
-    },
     "authors": [
         {
             "name": "Sven Reichel",
+            "homepage":"https://magento.stackexchange.com/users/46249/sv3n",
             "email": "github-sr@hotmail.com",
             "role": "Author/Maintainer"
         }
-    ]
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
 }

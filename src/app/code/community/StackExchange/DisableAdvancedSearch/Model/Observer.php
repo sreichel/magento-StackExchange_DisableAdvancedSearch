@@ -9,6 +9,7 @@
 
 /**
  * Observer Model
+ * @SuppressWarnings(PHPMD.CamelCaseClassName)
  */
 class StackExchange_DisableAdvancedSearch_Model_Observer
 {
@@ -17,12 +18,14 @@ class StackExchange_DisableAdvancedSearch_Model_Observer
      *
      * @param Varien_Event_Observer $observer
      * @return void
+     * @SuppressWarnings(PHPMD.StaticAccess)
      */
     public function disableAdvancedSearch(Varien_Event_Observer $observer)
     {
-        if (!Mage::getStoreConfigFlag('catalog/search/enable_advanced_search')) {
-            $path = Mage::getStoreConfig('web/default/cms_no_route');
-            $observer->getControllerAction()->getResponse()->setRedirect(Mage::getUrl($path));
+        /** @var StackExchange_DisableAdvancedSearch_Helper_Data $helper */
+        $helper = Mage::helper('stackexchange_disable_advancedsearch');
+        if ($helper->isNotEnabled()) {
+            $observer->getControllerAction()->getResponse()->setRedirect($helper->getNoRoutePath());
         }
     }
 }
