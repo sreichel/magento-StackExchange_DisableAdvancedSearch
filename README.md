@@ -1,3 +1,9 @@
+# DISCONTINUED
+
+It is part of [OpenMage](https://github.com/OpenMage/magento-lts/) v20.13.0.
+
+---
+
 # DisableAdvancedSearch Magento 1 Extension
 
 This extension adds availability to disable search by SKU, even when SKU is globally set to searchable.
